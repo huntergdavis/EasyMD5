@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:text="Load File" android:layout_alignParentTop="true"
+		android:id="@+id/loadButton" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></Button>
+	<TextView android:id="@+id/fileText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="FileName"
+		android:layout_below="@+id/loadButton" />
+	<EditText android:layout_width="fill_parent" android:id="@+id/mdfive"
+		android:text="MD5" android:layout_height="wrap_content"
+		android:layout_below="@+id/fileText"></EditText>
+	<Button android:id="@+id/savebutton" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:text="Save .MD5 file"
+		android:enabled='false' android:layout_below="@+id/mdfive"/>
+	<TextView android:id="@+id/md5fileText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="MD5 File Not Found"
+		android:layout_below="@+id/savebutton" />
+		
+
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14ded40945f875"
+		ads:adSize="BANNER" ads:loadAdOnCreate="false" />
+
+</RelativeLayout>
